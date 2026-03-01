@@ -1,0 +1,90 @@
+body {
+  font-family: Arial;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 120px);
+  gap: 4px 20px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.number {
+  width: 28px;
+}
+
+.tristate {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #aaa;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  background: #eee;
+}
+
+.missing {
+  background: #ffdddd;
+  border-color: #cc0000;
+  color: #cc0000;
+}
+
+.surplus {
+  background: #ddffdd;
+  border-color: #008800;
+  color: #008800;
+}
+
+.panel {
+  min-width: 260px;
+}
+
+.line {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* space between text and buttons */
+}
+
+.line-buttons {
+  margin-left: auto; /* push buttons to the right */
+  display: flex;
+  gap: 6px; /* space between copy & paste buttons */
+}
+
+.line-number {
+  min-height: 1em; /* reserve space for one line of numbers */
+  margin-top: 4px; /* small spacing from the buttons above */
+  white-space: pre-line; /* allow commas/newlines if needed */
+}
+
+button {
+  margin-left: 6px;
+  cursor: pointer;
+}
+
+.tradebox {
+  margin-top: 12px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  background: #fafafa;
+  white-space: pre-line;
+}
+
+h3 {
+  margin-top: 0;
+}
