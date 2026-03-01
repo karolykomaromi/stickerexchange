@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+  <div class="container">
+
+    <!-- YOUR GRID -->
+    <div>
+      <h3>Saját készlet</h3>
+      <div class="grid" id="yourGrid"></div>
+    </div>
+
+    <!-- MIDDLE PANEL -->
+    <div class="panel">
+
+      <div class="line">
+        <span>Hiányzik:</span>
+        <div class="line-buttons">
+          <button onclick="copyText(yourMissingLine)">Másolás</button>
+          <button onclick="pasteList(1, 'your')">Beillesztés</button>
+        </div>
+      </div>
+      <div class="line line-number" id="yourMissingLine"></div>
+
+      <div class="line">
+        <span>Csere:</span>
+        <div class="line-buttons">
+          <button onclick="copyText(yourSurplusLine)">Másolás</button>
+          <button onclick="pasteList(2, 'your')">Beillesztés</button>
+        </div>
+      </div>
+      <div class="line line-number" id="yourSurplusLine"></div>
+
+      <div class="line">
+        <span>Partnernek hiányzik:</span>
+        <div class="line-buttons">
+          <button onclick="copyText(theirMissingLine)">Másolás</button>
+          <button onclick="pasteList(1, 'their')">Beillesztés</button>
+        </div>
+      </div>
+      <div class="line line-number" id="theirMissingLine"></div>
+
+      <div class="line">
+        <span>Partner cseréje:</span>
+        <div class="line-buttons">
+          <button onclick="copyText(theirSurplusLine)">Másolás</button>
+          <button onclick="pasteList(2, 'their')">Beillesztés</button>
+        </div>
+      </div>
+      <div class="line line-number" id="theirSurplusLine"></div>
+
+      <div class="tradebox" id="tradeText">Kérem:
+      Adom:</div>
+      <button onclick="copyTrade()">Csereügylet másolása</button>
+
+    </div>
+
+    <!-- THEIR GRID -->
+    <div>
+      <h3>Patner készlet</h3>
+      <div class="grid" id="theirGrid"></div>
+    </div>
+
+  </div>
+</body>
+
+</html>
